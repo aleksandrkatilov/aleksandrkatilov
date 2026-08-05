@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Better Each Set — an Android workout planner and gym tracker.">
+  <title>Better Each Set: Gym Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../app.css">
+  <script src="../app.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="../index.html">Apps</a>
+      <div class="nav-wrap">
+        <nav class="nav"><a href="index.html" data-t="home">Home</a><a href="privacy.html" data-t="privacy">Privacy</a><a href="support.html" data-t="support">Support</a></nav>
+        <div class="lang"><button data-lang="en">EN</button><span>/</span><button data-lang="ru">RU</button></div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <span class="kicker" data-t="kicker">Android fitness app</span>
+          <h1 data-t="title">Better Each Set</h1>
+          <p data-t="hero">A focused workout tracker for recording every set, following your progress, and improving one session at a time.</p>
+          <div class="buttons"><a class="button primary" href="support.html" data-t="supportButton">Get support</a><a class="button" href="privacy.html" data-t="privacyButton">Privacy policy</a></div>
+        </div>
+        <div class="phone" aria-hidden="true"><img src="assets/screenshot-home.jpg" alt=""></div>
+      </section>
+      <section class="section showcase" aria-labelledby="screenshots-title">
+        <div class="showcase-head">
+          <div><span class="kicker" data-t="screenshotsKicker">Inside the app</span><h2 id="screenshots-title" data-t="screenshotsTitle">See every workout at a glance</h2></div>
+          <div class="carousel-controls"><button class="carousel-button" type="button" data-carousel-prev aria-label="Previous screenshot">←</button><span class="carousel-counter"><b data-carousel-current>1</b> / 3</span><button class="carousel-button" type="button" data-carousel-next aria-label="Next screenshot">→</button></div>
+        </div>
+        <div class="screenshot-track" data-carousel tabindex="0" aria-label="App screenshots">
+          <figure class="screenshot-slide"><img src="assets/screenshot-home.jpg" alt="Better Each Set home dashboard"><figcaption data-t="screenHome">Dashboard and weekly progress</figcaption></figure>
+          <figure class="screenshot-slide"><img src="assets/screenshot-awards.jpg" alt="Better Each Set awards screen" loading="lazy"><figcaption data-t="screenAwards">Awards and training milestones</figcaption></figure>
+          <figure class="screenshot-slide"><img src="assets/screenshot-programs.jpg" alt="Better Each Set workout programs" loading="lazy"><figcaption data-t="screenPrograms">Ready-made workout programs</figcaption></figure>
+        </div>
+      </section>
+      <section class="section"><h2 data-t="featureTitle">Built for the gym</h2><div class="grid"><div class="card"><span>01</span><h3 data-t="f1">Plan</h3><p data-t="f1t">Choose your gym and start a structured workout.</p></div><div class="card"><span>02</span><h3 data-t="f2">Track</h3><p data-t="f2t">Record exercises, weight, repetitions, and individual sets.</p></div><div class="card"><span>03</span><h3 data-t="f3">Improve</h3><p data-t="f3t">Review workout history and calendar activity to follow progress.</p></div></div></section>
+    </main>
+    <footer><span data-t="footer">Better Each Set · Android app</span><a href="../index.html" data-t="back">Back to Apps</a></footer>
+  </div>
+</body>
+</html>

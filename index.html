@@ -1,13 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aleksandr Katilov</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta id="meta-description" name="description" content="Aleksandr Katilov — founder of PUFFLY and ZERMOK, eBay seller and AI developer." />
+  <title>Aleksandr Katilov</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 </head>
-<body>
-    <h1>Aleksandr Katilov</h1>
-    <p>Android Developer & Product Creator</p>
-    <p>My personal portfolio is coming soon.</p>
+<body id="top">
+  <main class="page">
+    <header class="intro">
+      <div>
+        <h1 data-i18n="name">Aleksandr Katilov</h1>
+        <p class="role">Brand Founder · eBay Seller · AI Developer</p>
+        <p class="location">Renton, Washington, United States</p>
+      </div>
+      <div class="header-right">
+        <nav data-i18n-aria="navigation" aria-label="Navigation">
+          <a href="apps/index.html" data-i18n="navApps">Apps</a>
+          <a href="#projects" data-i18n="navProjects">Projects</a>
+          <a href="#directions" data-i18n="navDirections">Focus</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
+        </nav>
+        <div class="language-switch" aria-label="Language">
+          <button type="button" data-lang="en" class="active" aria-pressed="true">EN</button>
+          <span>/</span>
+          <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="resume-section">
+      <h2 data-i18n="aboutTitle">About</h2>
+      <div class="section-body">
+        <p class="lead" data-i18n="aboutLead">I build my own brands, sell products on eBay, and develop AI tools for business automation.</p>
+        <p class="muted" data-i18n="aboutText">My current focus is PUFFLY and ZERMOK, e-commerce, and practical artificial intelligence solutions.</p>
+      </div>
+    </section>
+
+    <section class="resume-section" id="projects">
+      <h2 data-i18n="projectsTitle">Projects</h2>
+      <div class="section-body entries">
+        <article class="entry featured">
+          <div class="entry-head">
+            <div>
+              <h3>PUFFLY <span class="tag">Baby Products</span></h3>
+              <p class="subtitle" data-i18n="pufflySubtitle">Baby products brand</p>
+            </div>
+            <time data-i18n="now">Present</time>
+          </div>
+          <p data-i18n="pufflyText">Building a baby products brand through product development, assortment planning, quality control, positioning, and e-commerce.</p>
+          <ul class="tech"><li>Product Development</li><li>E-commerce</li><li>Brand Building</li></ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <div>
+              <h3>ZERMOK <span class="tag">Auto Parts</span></h3>
+              <p class="subtitle" data-i18n="zermokSubtitle">Automotive parts brand</p>
+            </div>
+            <time data-i18n="now">Present</time>
+          </div>
+          <p data-i18n="zermokText">Creating and developing an automotive parts brand focused on in-demand categories, reliable products, and an easier buying experience.</p>
+          <ul class="tech"><li>Automotive</li><li>Product Sourcing</li><li>E-commerce</li></ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <div>
+              <h3>Full Body Tracker <span class="tag">AI Project</span></h3>
+              <p class="subtitle" data-i18n="trackerSubtitle">Independent AI development</p>
+            </div>
+            <time>2026</time>
+          </div>
+          <p data-i18n="trackerText">A mobile Android app for planning and logging workouts. Users select a gym, start a workout, mark completed exercises, and record weight and repetitions for every set. Results are saved to workout history and a calendar, making it easy to track progress and adjust the training program over time.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="resume-section" id="directions">
+      <h2 data-i18n="currentTitle">Current focus</h2>
+      <div class="section-body entries">
+        <article class="entry">
+          <div class="entry-head">
+            <div><h3>PUFFLY & ZERMOK</h3><p class="subtitle" data-i18n="brandsSubtitle">Independent brands</p></div>
+            <time data-i18n="direction1">Focus 01</time>
+          </div>
+          <p data-i18n="brandsText">I create products, develop assortments, and build brands in the baby products and automotive parts categories.</p>
+        </article>
+        <article class="entry">
+          <div class="entry-head">
+            <div><h3>eBay Seller</h3><p class="subtitle" data-i18n="ebaySubtitle">E-commerce</p></div>
+            <time data-i18n="direction2">Focus 02</time>
+          </div>
+          <p data-i18n="ebayText">I sell products on eBay and continuously improve the process of creating, presenting, and managing listings.</p>
+        </article>
+        <article class="entry">
+          <div class="entry-head">
+            <div><h3>AI Development</h3><p class="subtitle" data-i18n="aiSubtitle">Tools and automation</p></div>
+            <time data-i18n="direction3">Focus 03</time>
+          </div>
+          <p data-i18n="aiText">I develop AI solutions that reduce manual work and make online sales operations more efficient.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="resume-section" id="skills">
+      <h2 data-i18n="skillsTitle">Skills</h2>
+      <div class="section-body skills-grid">
+        <div><h3 data-i18n="brandsSkill">Brands</h3><p data-i18n="brandsSkillText">Products, positioning, e-commerce</p></div>
+        <div><h3>eBay</h3><p data-i18n="ebaySkillText">Sales, listings, photography, assortment</p></div>
+        <div><h3 data-i18n="aiSkill">AI Development</h3><p data-i18n="aiSkillText">Python, APIs, AI models, automation</p></div>
+      </div>
+    </section>
+
+    <section class="resume-section contact" id="contact">
+      <h2 data-i18n="contactTitle">Contact</h2>
+      <div class="section-body contact-links">
+        <a href="https://www.linkedin.com/in/aleksandrkatilov/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        <a href="https://github.com/katilov9377-jpg" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </div>
+    </section>
+
+    <footer>
+      <span>© <span id="year"></span> <span data-i18n="name">Aleksandr Katilov</span></span>
+      <a href="#top" data-i18n="backToTop">Back to top ↑</a>
+    </footer>
+  </main>
 </body>
 </html>
