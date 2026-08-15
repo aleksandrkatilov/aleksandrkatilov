@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="DebtExit — a private Android debt payoff planner with avalanche and snowball forecasts.">
+  <title>DebtExit: Debt Payoff Planner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../app.css">
+  <script src="../app.js" defer></script>
+</head>
+<body class="debt-page">
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="../index.html">Apps</a>
+      <div class="nav-wrap">
+        <nav class="nav"><a href="index.html" data-t="home">Home</a><a href="privacy.html" data-t="privacy">Privacy</a></nav>
+        <div class="lang"><button data-lang="en">EN</button><span>/</span><button data-lang="ru">RU</button></div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <span class="kicker" data-en="Private Android finance app" data-ru="Приватное финансовое приложение для Android">Private Android finance app</span>
+          <h1>DebtExit</h1>
+          <p data-en="A clear, private debt payoff planner that organizes credit cards by APR, compares avalanche and snowball strategies, and shows the month you can become debt-free." data-ru="Понятный и приватный планировщик погашения долгов: сортирует кредитные карты по ставке, сравнивает стратегии «лавина» и «снежный ком» и показывает месяц полного погашения.">A clear, private debt payoff planner that organizes credit cards by APR, compares avalanche and snowball strategies, and shows the month you can become debt-free.</p>
+          <div class="buttons"><a class="button primary" href="#screenshots" data-en="See the app" data-ru="Посмотреть приложение">See the app</a><a class="button" href="privacy.html" data-t="privacyButton">Privacy policy</a></div>
+        </div>
+        <div class="phone" aria-hidden="true"><img src="assets/forecast.png" alt=""></div>
+      </section>
+
+      <section class="section showcase" id="screenshots" aria-labelledby="debt-screenshots-title">
+        <div class="showcase-head">
+          <div><span class="kicker" data-en="Inside DebtExit" data-ru="Внутри DebtExit">Inside DebtExit</span><h2 id="debt-screenshots-title" data-en="A plan you can understand" data-ru="План, который легко понять">A plan you can understand</h2></div>
+          <div class="carousel-controls"><button class="carousel-button" type="button" data-carousel-prev aria-label="Previous screenshot">←</button><span class="carousel-counter"><b data-carousel-current>1</b> / 5</span><button class="carousel-button" type="button" data-carousel-next aria-label="Next screenshot">→</button></div>
+        </div>
+        <div class="screenshot-track" data-carousel tabindex="0" aria-label="DebtExit screenshots">
+          <figure class="screenshot-slide"><img src="assets/cards.png" alt="DebtExit credit card list"><figcaption data-en="Cards sorted by APR" data-ru="Карты, отсортированные по ставке">Cards sorted by APR</figcaption></figure>
+          <figure class="screenshot-slide"><img src="assets/forecast.png" alt="DebtExit payoff forecast" loading="lazy"><figcaption data-en="Debt-free date and payoff forecast" data-ru="Дата погашения и прогноз">Debt-free date and payoff forecast</figcaption></figure>
+          <figure class="screenshot-slide"><img src="assets/plan.png" alt="DebtExit monthly payoff plan" loading="lazy"><figcaption data-en="Simple monthly action plan" data-ru="Простой план действий на месяц">Simple monthly action plan</figcaption></figure>
+          <figure class="screenshot-slide"><img src="assets/language.png" alt="DebtExit language and currency settings" loading="lazy"><figcaption data-en="English, Russian, and Spanish" data-ru="Английский, русский и испанский">English, Russian, and Spanish</figcaption></figure>
+          <figure class="screenshot-slide"><img src="assets/backup.png" alt="DebtExit encrypted backup settings" loading="lazy"><figcaption data-en="Encrypted backup and app protection" data-ru="Зашифрованная резервная копия и защита">Encrypted backup and app protection</figcaption></figure>
+        </div>
+      </section>
+
+      <section class="section"><h2 data-en="Built to make debt feel manageable" data-ru="Помогает сделать долги управляемыми">Built to make debt feel manageable</h2><div class="grid"><div class="card"><span>01</span><h3 data-en="Organize" data-ru="Организация">Organize</h3><p data-en="Keep balances, limits, APRs, minimum payments, and due dates in one private place." data-ru="Храните остатки, лимиты, ставки, минимальные платежи и даты оплаты в одном приватном месте.">Keep balances, limits, APRs, minimum payments, and due dates in one private place.</p></div><div class="card"><span>02</span><h3 data-en="Forecast" data-ru="Прогноз">Forecast</h3><p data-en="Compare avalanche and snowball strategies and see how your monthly budget changes the payoff date." data-ru="Сравнивайте стратегии «лавина» и «снежный ком» и смотрите, как бюджет влияет на дату погашения.">Compare avalanche and snowball strategies and see how your monthly budget changes the payoff date.</p></div><div class="card"><span>03</span><h3 data-en="Protect" data-ru="Защита">Protect</h3><p data-en="Data stays on your device, with optional PIN protection and password-encrypted backup files." data-ru="Данные остаются на устройстве; доступны PIN-защита и резервные копии с паролем.">Data stays on your device, with optional PIN protection and password-encrypted backup files.</p></div></div></section>
+    </main>
+    <footer><span>DebtExit · Android app</span><a href="../index.html" data-t="back">Back to Apps</a></footer>
+  </div>
+</body>
+</html>
