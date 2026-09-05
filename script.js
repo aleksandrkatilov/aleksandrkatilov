@@ -26,7 +26,7 @@ const translations = {
     skillsTitle: "Skills", brandsSkill: "Brands", brandsSkillText: "Products, positioning, e-commerce",
     ebaySkillText: "Sales, listings, photography, assortment",
     aiSkill: "AI Development", aiSkillText: "Python, APIs, AI models, automation",
-    contactTitle: "Contact", backToTop: "Back to top ↑"
+    contactTitle: "Contact", backToTop: "Back to top ↑", viewApps: "Explore my apps", connectLinkedIn: "Connect on LinkedIn ↗"
   },
   ru: {
     name: "Александр Катилов",
@@ -55,7 +55,7 @@ const translations = {
     skillsTitle: "Навыки", brandsSkill: "Бренды", brandsSkillText: "Продукты, позиционирование, электронная коммерция",
     ebaySkillText: "Продажи, листинги, фотографии, ассортимент",
     aiSkill: "AI‑разработка", aiSkillText: "Python, API, AI‑модели, автоматизация",
-    contactTitle: "Контакты", backToTop: "Наверх ↑"
+    contactTitle: "Контакты", backToTop: "Наверх ↑", viewApps: "Посмотреть приложения", connectLinkedIn: "Связаться в LinkedIn ↗"
   }
 };
 
@@ -73,10 +73,10 @@ function setLanguage(language) {
     button.classList.toggle("active", selected);
     button.setAttribute("aria-pressed", String(selected));
   });
-  document.title = language === "en" ? "Aleksandr Katilov" : "Александр Катилов";
+  document.title = language === "en" ? "Aleksandr Katilov — Founder, eBay Seller & AI Developer" : "Александр Катилов — основатель брендов, eBay-продавец и AI-разработчик";
   document.getElementById("meta-description").content = language === "en"
-    ? "Aleksandr Katilov — founder of PUFFLY and ZERMOK, eBay seller and AI developer."
-    : "Александр Катилов — основатель брендов PUFFLY и ZERMOK, eBay seller и AI-разработчик.";
+    ? "Portfolio of Aleksandr Katilov — founder of PUFFLY and ZERMOK, eBay seller, and developer of privacy-focused Android and AI tools."
+    : "Портфолио Александра Катилова — основателя PUFFLY и ZERMOK, eBay-продавца и разработчика Android- и AI-инструментов.";
   localStorage.setItem("portfolio-language", language);
 }
 

@@ -12,7 +12,7 @@ if(carousel){
   const slides=[...carousel.querySelectorAll('.screenshot-slide')];
   const current=document.querySelector('[data-carousel-current]');
   let active=0;
-  const show=index=>{active=(index+slides.length)%slides.length;const slide=slides[active];carousel.scrollTo({left:slide.offsetLeft-(carousel.clientWidth-slide.clientWidth)/2,behavior:'smooth'});if(current)current.textContent=String(active+1)};
+  const show=index=>{active=(index+slides.length)%slides.length;const slide=slides[active];const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;carousel.scrollTo({left:slide.offsetLeft-(carousel.clientWidth-slide.clientWidth)/2,behavior:reduce?'auto':'smooth'});if(current)current.textContent=String(active+1)};
   document.querySelector('[data-carousel-prev]')?.addEventListener('click',()=>show(active-1));
   document.querySelector('[data-carousel-next]')?.addEventListener('click',()=>show(active+1));
   carousel.addEventListener('keydown',event=>{if(event.key==='ArrowLeft'){event.preventDefault();show(active-1)}if(event.key==='ArrowRight'){event.preventDefault();show(active+1)}});
