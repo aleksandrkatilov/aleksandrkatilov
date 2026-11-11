@@ -4,6 +4,8 @@ const copy={
 };
 Object.assign(copy.en,{screenshotsKicker:"Inside the app",screenshotsTitle:"See every workout at a glance",screenHome:"Dashboard and weekly progress",screenAwards:"Awards and training milestones",screenPrograms:"Ready-made workout programs"});
 Object.assign(copy.ru,{screenshotsKicker:"Внутри приложения",screenshotsTitle:"Вся тренировка перед глазами",screenHome:"Главный экран и прогресс за неделю",screenAwards:"Награды и достижения",screenPrograms:"Готовые программы тренировок"});
+Object.assign(copy.en,{catalogText:"Independent Windows and Android tools for work and everyday progress."});
+Object.assign(copy.ru,{catalogText:"Независимые программы для Windows и Android для работы и повседневных задач."});
 function setLang(lang){document.documentElement.lang=lang;document.querySelectorAll('[data-t]').forEach(el=>{const value=copy[lang][el.dataset.t];if(value!==undefined)el.textContent=value});document.querySelectorAll('[data-en][data-ru]').forEach(el=>{el.textContent=el.dataset[lang]});document.querySelectorAll('[data-lang]').forEach(b=>{const on=b.dataset.lang===lang;b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on))});localStorage.setItem('apps-language',lang)}
 document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));setLang(localStorage.getItem('apps-language')||'en');
 

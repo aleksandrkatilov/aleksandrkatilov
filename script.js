@@ -17,6 +17,9 @@ const translations = {
     debtExitName: "DebtExit — A Clear Path Out of Debt",
     debtExitSubtitle: "Private debt payoff planner",
     debtExitText: "A private Android app that turns credit card balances, APRs, minimum payments, and a monthly budget into a clear payoff forecast. It compares avalanche and snowball strategies, creates a simple monthly action plan, and keeps financial data locally on the device with optional PIN protection and encrypted backups.",
+    rilvoPlatform: "Windows Apps",
+    rilvoSubtitle: "RWrite documents & RSheets spreadsheets",
+    rilvoText: "An office suite for Windows with RWrite for Word documents and RSheets for Excel spreadsheets. Work offline with familiar file formats, editing tools, formulas and built-in backups. Installer coming soon.",
     currentTitle: "Current focus", brandsSubtitle: "Independent brands", direction1: "Focus 01",
     brandsText: "I create products, develop assortments, and build brands in the baby products and automotive parts categories.",
     ebaySubtitle: "E-commerce", direction2: "Focus 02",
@@ -46,6 +49,9 @@ const translations = {
     debtExitName: "DebtExit — понятный путь к жизни без долгов",
     debtExitSubtitle: "Приватный планировщик погашения долгов",
     debtExitText: "Приватное Android‑приложение, которое превращает остатки по кредитным картам, процентные ставки, минимальные платежи и месячный бюджет в понятный прогноз погашения. Оно сравнивает стратегии «лавина» и «снежный ком», составляет простой план на месяц и хранит финансовые данные локально на устройстве с дополнительной PIN‑защитой и зашифрованными резервными копиями.",
+    rilvoPlatform: "Программы для Windows",
+    rilvoSubtitle: "Документы RWrite и таблицы RSheets",
+    rilvoText: "Офисный пакет для Windows: RWrite для документов Word и RSheets для таблиц Excel. Работа офлайн с привычными форматами, инструментами редактирования, формулами и резервными копиями. Установщик скоро появится.",
     currentTitle: "Сейчас", brandsSubtitle: "Собственные бренды", direction1: "Направление 01",
     brandsText: "Создаю продукты, развиваю ассортимент и формирую бренды в категориях детских товаров и автозапчастей.",
     ebaySubtitle: "Электронная коммерция", direction2: "Направление 02",
@@ -75,8 +81,8 @@ function setLanguage(language) {
   });
   document.title = language === "en" ? "Aleksandr Katilov — Founder, eBay Seller & AI Developer" : "Александр Катилов — основатель брендов, eBay-продавец и AI-разработчик";
   document.getElementById("meta-description").content = language === "en"
-    ? "Portfolio of Aleksandr Katilov — founder of PUFFLY and ZERMOK, eBay seller, and developer of privacy-focused Android and AI tools."
-    : "Портфолио Александра Катилова — основателя PUFFLY и ZERMOK, eBay-продавца и разработчика Android- и AI-инструментов.";
+    ? "Portfolio of Aleksandr Katilov — founder of PUFFLY and ZERMOK, eBay seller, and developer of Windows, Android and AI tools, including Rilvo Office."
+    : "Портфолио Александра Катилова — основателя PUFFLY и ZERMOK, eBay-продавца и разработчика программ для Windows, Android- и AI-инструментов, включая Rilvo Office.";
   localStorage.setItem("portfolio-language", language);
 }
 
