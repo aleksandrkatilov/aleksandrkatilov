@@ -2,7 +2,7 @@ const translations = {
   en: {
     name: "Aleksandr Katilov",
     navigation: "Navigation",
-    navApps: "Apps", navProjects: "Projects", navDirections: "Focus", navContact: "Contact",
+    navDesktop: "Desktop Software", navApps: "Mobile Apps", navProjects: "Projects", navDirections: "Focus", navContact: "Contact",
     aboutTitle: "About",
     aboutLead: "I build my own brands, sell products on eBay, and develop AI tools for business automation.",
     aboutText: "My current focus is PUFFLY and ZERMOK, e-commerce, and practical artificial intelligence solutions.",
@@ -29,12 +29,12 @@ const translations = {
     skillsTitle: "Skills", brandsSkill: "Brands", brandsSkillText: "Products, positioning, e-commerce",
     ebaySkillText: "Sales, listings, photography, assortment",
     aiSkill: "AI Development", aiSkillText: "Python, APIs, AI models, automation",
-    contactTitle: "Contact", backToTop: "Back to top ↑", viewApps: "Explore my apps", connectLinkedIn: "Connect on LinkedIn ↗"
+    contactTitle: "Contact", backToTop: "Back to top ↑", viewDesktop: "Desktop Software", viewApps: "Mobile Apps", connectLinkedIn: "Connect on LinkedIn ↗"
   },
   ru: {
     name: "Александр Катилов",
     navigation: "Навигация",
-    navApps: "Приложения", navProjects: "Проекты", navDirections: "Направления", navContact: "Контакты",
+    navDesktop: "Программы для ПК", navApps: "Мобильные приложения", navProjects: "Проекты", navDirections: "Направления", navContact: "Контакты",
     aboutTitle: "Обо мне",
     aboutLead: "Развиваю собственные бренды, продаю товары на eBay и создаю AI‑инструменты для автоматизации бизнеса.",
     aboutText: "Мои текущие направления — PUFFLY и ZERMOK, электронная коммерция и разработка практичных решений с искусственным интеллектом.",
@@ -61,7 +61,7 @@ const translations = {
     skillsTitle: "Навыки", brandsSkill: "Бренды", brandsSkillText: "Продукты, позиционирование, электронная коммерция",
     ebaySkillText: "Продажи, листинги, фотографии, ассортимент",
     aiSkill: "AI‑разработка", aiSkillText: "Python, API, AI‑модели, автоматизация",
-    contactTitle: "Контакты", backToTop: "Наверх ↑", viewApps: "Посмотреть приложения", connectLinkedIn: "Связаться в LinkedIn ↗"
+    contactTitle: "Контакты", backToTop: "Наверх ↑", viewDesktop: "Программы для ПК", viewApps: "Мобильные приложения", connectLinkedIn: "Связаться в LinkedIn ↗"
   }
 };
 

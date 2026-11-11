@@ -61,4 +61,5 @@
 .release-section>.button{flex-shrink:0}
 @media(max-width:800px){.office-hero{gap:26px;grid-template-columns:1.2fr 1fr}.suite-tile{padding:18px;gap:12px}.suite-tile strong{font-size:21px}.detail-columns{gap:28px}}
 @media(max-width:620px){.office-hero{grid-template-columns:1fr;padding:58px 0}.office-hero h1{font-size:58px;letter-spacing:-3.8px}.office-hero h1 span{font-size:23px}.suite-overview{padding:18px 0 0;border:0;max-width:420px}.sheets-tile{margin-right:0}.product-grid,.detail-columns{grid-template-columns:1fr}.product-summary{padding:24px}.product-heading h2{font-size:44px}.product-lead{font-size:16px}.office-page .section{padding:60px 0}.office-page .section-heading h2{font-size:32px}.release-section{align-items:flex-start;flex-direction:column;gap:12px}.brand-note{max-width:130px}.office-page .nav{gap:10px;font-size:12px}}
+@media(max-width:620px){.office-page .topbar{flex-wrap:wrap;gap:18px}.office-page .nav-wrap{width:100%;align-items:flex-start;flex-direction:row;justify-content:space-between;gap:12px}.office-page .nav{flex-wrap:wrap}}
 @media(prefers-reduced-motion:reduce){.suite-tile{transition:none}.suite-tile:hover{transform:none}}
