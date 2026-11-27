@@ -19,12 +19,17 @@ const translations = {
     debtExitName: "DebtExit — A Clear Path Out of Debt",
     debtExitSubtitle: "Private debt payoff planner",
     debtExitText: "A private Android app that turns credit card balances, APRs, minimum payments, and a monthly budget into a clear payoff forecast. It compares avalanche and snowball strategies, creates a simple monthly action plan, and keeps financial data locally on the device with optional PIN protection and encrypted backups.",
+    dufliPlatform: "Android & Windows",
+    dufliSubtitle: "Local file transfer",
+    dufliText: "Transfer photos, videos, documents and other files between Android and Windows over your local network. Pair by QR, share original files and verify delivery without an account or cloud relay.",
+    dufliWindowsDownload: "Download for Windows",
+    dufliAndroidDownload: "Download Android APK",
     rilvoPlatform: "Windows Apps",
     pausecutSubtitle: "Pause editing and Shorts for Windows",
     pausecutPlatform: "Windows App",
     pausecutText: "A Windows video editor built on auto-editor. Merge clips, automatically speed up or cut pauses, preview the finished edit, make manual cuts and export vertical Shorts in batches. Includes timeline tools and a separate Whisper transcription utility.",
     rilvoDownload: "Download for Windows",
-    rilvoSource: "Source code on GitHub",
+    rilvoSource: "Project and downloads",
     rilvoSubtitle: "RWrite documents & RSheets spreadsheets",
     rilvoText: "An office suite for Windows with RWrite for Word documents and RSheets for Excel spreadsheets. Work offline with familiar file formats, editing tools, formulas and built-in backups. Download for Windows.",
     currentTitle: "Current focus", brandsSubtitle: "Independent brands", direction1: "Focus 01",
@@ -58,12 +63,17 @@ const translations = {
     debtExitName: "DebtExit — понятный путь к жизни без долгов",
     debtExitSubtitle: "Приватный планировщик погашения долгов",
     debtExitText: "Приватное Android‑приложение, которое превращает остатки по кредитным картам, процентные ставки, минимальные платежи и месячный бюджет в понятный прогноз погашения. Оно сравнивает стратегии «лавина» и «снежный ком», составляет простой план на месяц и хранит финансовые данные локально на устройстве с дополнительной PIN‑защитой и зашифрованными резервными копиями.",
+    dufliPlatform: "Android и Windows",
+    dufliSubtitle: "Передача файлов по локальной сети",
+    dufliText: "Передавайте фото, видео, документы и другие файлы между Android и Windows по локальной сети. Сопрягите устройства по QR, отправляйте оригинальные файлы и проверяйте доставку без аккаунта и облачного посредника.",
+    dufliWindowsDownload: "Скачать для Windows",
+    dufliAndroidDownload: "Скачать Android APK",
     rilvoPlatform: "Программы для Windows",
     pausecutSubtitle: "Монтаж пауз и Shorts для Windows",
     pausecutPlatform: "Программа для Windows",
     pausecutText: "Видеоредактор для Windows на базе auto-editor: склейка исходников, автоматическое ускорение или удаление пауз, предпросмотр результата, ручная резка и пакетный экспорт вертикальных Shorts. Есть таймлайн и отдельная утилита распознавания речи Whisper.",
     rilvoDownload: "Скачать для Windows",
-    rilvoSource: "Исходный код на GitHub",
+    rilvoSource: "Описание и загрузки",
     rilvoSubtitle: "Документы RWrite и таблицы RSheets",
     rilvoText: "Офисный пакет для Windows: RWrite для документов Word и RSheets для таблиц Excel. Работа офлайн с привычными форматами, инструментами редактирования, формулами и резервными копиями. Доступно скачивание для Windows.",
     currentTitle: "Сейчас", brandsSubtitle: "Собственные бренды", direction1: "Направление 01",
@@ -95,8 +105,8 @@ function setLanguage(language) {
   });
   document.title = language === "en" ? "Aleksandr Katilov — Founder, eBay Seller & AI Developer" : "Александр Катилов — основатель брендов, eBay-продавец и AI-разработчик";
   document.getElementById("meta-description").content = language === "en"
-    ? "Portfolio of Aleksandr Katilov — founder of PUFFLY and ZERMOK, eBay seller, and developer of Windows, Android and AI tools, including Rilvo Office."
-    : "Портфолио Александра Катилова — основателя PUFFLY и ZERMOK, eBay-продавца и разработчика программ для Windows, Android- и AI-инструментов, включая Rilvo Office.";
+    ? "Portfolio of Aleksandr Katilov — founder of PUFFLY and ZERMOK, eBay seller, and developer of Windows, Android and AI tools, including Dufli and Rilvo Office."
+    : "Портфолио Александра Катилова — основателя PUFFLY и ZERMOK, eBay-продавца и разработчика программ для Windows, Android- и AI-инструментов, включая Dufli и Rilvo Office.";
   localStorage.setItem("portfolio-language", language);
 }
 
