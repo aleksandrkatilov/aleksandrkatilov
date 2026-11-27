@@ -1,0 +1,9 @@
+.faststock-page{font-size:16px}.faststock-page section[id]{scroll-margin-top:24px}
+.faststock-page .nav a,.faststock-page .lang,.faststock-page .button{font-size:14px}.faststock-page .lang button{font-size:14px;padding:8px}
+.faststock-page .hero p.faststock-lead{font-size:clamp(22px,2.5vw,29px);line-height:1.3;font-weight:600;color:var(--ink);letter-spacing:-.6px}
+.faststock-page .card h3{font-size:20px}.faststock-page .card p{font-size:16px;line-height:1.65}.faststock-features .card:last-child{grid-column:1/-1}.faststock-features .card:last-child p{max-width:760px}
+.faststock-page .section h2{margin-top:12px}.faststock-steps{padding-left:24px;line-height:1.7}.faststock-steps li{margin:14px 0;padding-left:7px}
+.faststock-faq details{border-top:1px solid var(--line);padding:22px 0}.faststock-faq details:last-child{border-bottom:1px solid var(--line)}.faststock-faq summary{font-size:18px;font-weight:600;cursor:pointer}.faststock-faq summary:focus-visible{outline:3px solid #197a6266;outline-offset:5px}.faststock-faq p{max-width:850px;color:var(--muted);font-size:16px;line-height:1.7}
+.faststock-download{display:flex;align-items:center;justify-content:space-between;gap:36px}.faststock-download h2{margin-bottom:18px}.faststock-download p{color:var(--muted)}.faststock-download>.button{flex-shrink:0}.faststock-page footer{font-size:14px;gap:20px;flex-wrap:wrap}
+@media(max-width:850px){.faststock-page .topbar{flex-wrap:wrap;gap:18px;padding:22px 0}.faststock-page .nav-wrap{width:100%;justify-content:space-between;flex-direction:row;align-items:flex-start;gap:14px}.faststock-page .nav{flex-wrap:wrap;gap:10px 16px}}
+@media(max-width:620px){.faststock-page .hero{padding:55px 0}.faststock-page .section{padding:55px 0}.faststock-page .section h2{font-size:32px;letter-spacing:-1.2px}.faststock-download{flex-direction:column;align-items:flex-start;gap:18px}.faststock-features .card:last-child{grid-column:auto}.faststock-page .nav{gap:8px 14px}}

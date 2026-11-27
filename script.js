@@ -14,6 +14,12 @@ const translations = {
     trackerName: "BetterSet: Gym Workout Tracker",
     trackerDownload: "Get it on Google Play",
     faststockDownload: "Get it on Google Play",
+    faststockName: "FastStock: Inventory & Storage",
+    faststockFlagship: "Flagship app",
+    faststockSubtitle: "Inventory for personal storage and teams",
+    faststockText: "Organize photos, items, boxes and storage locations. Invite employees with access roles, sync company inventory across devices, scan box QR labels and print them. Export XLSX/CSV when you need a table.",
+    faststockExplore: "Explore FastStock",
+    faststockProject: "Project information",
     trackerSubtitle: "Independent AI development",
     trackerText: "Build a consistent gym routine with workout scheduling, adjustable reminders, attendance history, and directions to your gym. Log every set, weight, and rep, and follow your progress in one place.",
     debtExitName: "DebtExit — A Clear Path Out of Debt",
@@ -58,6 +64,12 @@ const translations = {
     trackerName: "BetterSet: Gym Workout Tracker",
     trackerDownload: "Скачать в Google Play",
     faststockDownload: "Скачать в Google Play",
+    faststockName: "FastStock: Inventory & Storage",
+    faststockFlagship: "Основное приложение",
+    faststockSubtitle: "Личный и командный учёт товаров",
+    faststockText: "Организуйте фото, товары, коробки и места хранения. Приглашайте сотрудников с нужными ролями, синхронизируйте запасы компании между устройствами, сканируйте и печатайте QR-этикетки коробок. Экспортируйте XLSX/CSV, когда нужна таблица.",
+    faststockExplore: "Открыть FastStock",
+    faststockProject: "Описание приложения",
     trackerSubtitle: "Собственная AI‑разработка",
     trackerText: "Тренируйтесь регулярно: планируйте занятия, настраивайте напоминания, отмечайте посещения и открывайте маршрут до зала. Записывайте подходы, вес и повторения — вся история тренировок и прогресса в одном месте.",
     debtExitName: "DebtExit — понятный путь к жизни без долгов",
@@ -105,8 +117,8 @@ function setLanguage(language) {
   });
   document.title = language === "en" ? "Aleksandr Katilov — Founder, eBay Seller & AI Developer" : "Александр Катилов — основатель брендов, eBay-продавец и AI-разработчик";
   document.getElementById("meta-description").content = language === "en"
-    ? "Portfolio of Aleksandr Katilov — founder of PUFFLY and ZERMOK, eBay seller, and developer of Windows, Android and AI tools, including Dufli and Rilvo Office."
-    : "Портфолио Александра Катилова — основателя PUFFLY и ZERMOK, eBay-продавца и разработчика программ для Windows, Android- и AI-инструментов, включая Dufli и Rilvo Office.";
+    ? "Portfolio of Aleksandr Katilov — founder of PUFFLY and ZERMOK, eBay seller, and developer of Windows, Android and AI tools, led by FastStock: Inventory & Storage, alongside Dufli and Rilvo Office."
+    : "Портфолио Александра Катилова — основателя PUFFLY и ZERMOK, eBay-продавца и разработчика программ для Windows, Android- и AI-инструментов, с основным приложением FastStock: Inventory & Storage, а также Dufli и Rilvo Office.";
   localStorage.setItem("portfolio-language", language);
 }
 
