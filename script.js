@@ -1,6 +1,10 @@
 const translations = {
   en: {
     name: "Aleksandr Katilov",
+    role: "Software Developer · Brand Founder · eBay Seller",
+    projectInfo: "Project information", appDetails: "App details",
+    activitySubtitle: "A journal of completed work",
+    activityText: "Record completed actions by project using text or reviewed voice input. Review your day, week and month with summaries and a calendar. Includes English and Russian, reminders and manual JSON backups. Data stays on your device; a public download is not available yet.",
     navigation: "Navigation",
     navDesktop: "Desktop Software", navApps: "Mobile Apps", navProjects: "Projects", navDirections: "Focus", navContact: "Contact",
     aboutTitle: "About",
@@ -20,11 +24,11 @@ const translations = {
     faststockText: "Organize photos, items, boxes and storage locations. Invite employees with access roles, sync company inventory across devices, scan box QR labels and print them. Export XLSX/CSV when you need a table.",
     faststockExplore: "Explore FastStock",
     faststockProject: "Project information",
-    trackerSubtitle: "Independent AI development",
-    trackerText: "Build a consistent gym routine with workout scheduling, adjustable reminders, attendance history, and directions to your gym. Log every set, weight, and rep, and follow your progress in one place.",
+    trackerSubtitle: "Workout log and fitness progress",
+    trackerText: "Log gym sets, reps and weight, follow workout history and body-weight charts, compare progress photos and keep a regular routine with reminders. Training records stay on your device; the app includes banner advertising.",
     debtExitName: "DebtExit — A Clear Path Out of Debt",
     debtExitSubtitle: "Private debt payoff planner",
-    debtExitText: "A private Android app that turns credit card balances, APRs, minimum payments, and a monthly budget into a clear payoff forecast. It compares avalanche and snowball strategies, creates a simple monthly action plan, and keeps financial data locally on the device with optional PIN protection and encrypted backups.",
+    debtExitText: "Compare avalanche and snowball payoff estimates, review imported statements and set payment reminders. Credit cards, other debts and subscriptions stay in encrypted local records with optional PIN or biometric access and password-protected backups. No bank connection or payment processing.",
     dufliPlatform: "Android & Windows",
     dufliSubtitle: "Local file transfer",
     dufliText: "Transfer photos, videos, documents and other files between Android and Windows over your local network. Pair by QR, share original files and verify delivery without an account or cloud relay.",
@@ -51,6 +55,10 @@ const translations = {
   },
   ru: {
     name: "Александр Катилов",
+    role: "Разработчик программ · Основатель брендов · eBay-продавец",
+    projectInfo: "Описание на GitHub", appDetails: "Об приложении",
+    activitySubtitle: "Дневник выполненной работы",
+    activityText: "Записывайте выполненные действия по проектам текстом или голосом с проверкой результата. Просматривайте итоги дня, недели и месяца и календарь. Есть русский и английский, напоминания и ручные JSON-копии. Данные хранятся на устройстве; публичная загрузка пока недоступна.",
     navigation: "Навигация",
     navDesktop: "Программы для ПК", navApps: "Мобильные приложения", navProjects: "Проекты", navDirections: "Направления", navContact: "Контакты",
     aboutTitle: "Обо мне",
@@ -70,11 +78,11 @@ const translations = {
     faststockText: "Организуйте фото, товары, коробки и места хранения. Приглашайте сотрудников с нужными ролями, синхронизируйте запасы компании между устройствами, сканируйте и печатайте QR-этикетки коробок. Экспортируйте XLSX/CSV, когда нужна таблица.",
     faststockExplore: "Открыть FastStock",
     faststockProject: "Описание приложения",
-    trackerSubtitle: "Собственная AI‑разработка",
-    trackerText: "Тренируйтесь регулярно: планируйте занятия, настраивайте напоминания, отмечайте посещения и открывайте маршрут до зала. Записывайте подходы, вес и повторения — вся история тренировок и прогресса в одном месте.",
+    trackerSubtitle: "Дневник тренировок и фитнес-прогресс",
+    trackerText: "Записывайте подходы, повторения и вес, просматривайте историю тренировок и график веса тела, сравнивайте фото прогресса и настраивайте напоминания. Записи тренировок хранятся на устройстве; в приложении есть баннерная реклама.",
     debtExitName: "DebtExit — понятный путь к жизни без долгов",
     debtExitSubtitle: "Приватный планировщик погашения долгов",
-    debtExitText: "Приватное Android‑приложение, которое превращает остатки по кредитным картам, процентные ставки, минимальные платежи и месячный бюджет в понятный прогноз погашения. Оно сравнивает стратегии «лавина» и «снежный ком», составляет простой план на месяц и хранит финансовые данные локально на устройстве с дополнительной PIN‑защитой и зашифрованными резервными копиями.",
+    debtExitText: "Сравнивайте расчётные планы погашения «лавина» и «снежный ком», проверяйте импортированные выписки и настраивайте напоминания. Карты, другие долги и подписки хранятся локально с шифрованием, дополнительной PIN- или биометрической защитой и резервными копиями с паролем. Без подключения к банкам и выполнения платежей.",
     dufliPlatform: "Android и Windows",
     dufliSubtitle: "Передача файлов по локальной сети",
     dufliText: "Передавайте фото, видео, документы и другие файлы между Android и Windows по локальной сети. Сопрягите устройства по QR, отправляйте оригинальные файлы и проверяйте доставку без аккаунта и облачного посредника.",
@@ -102,10 +110,12 @@ const translations = {
 };
 
 function setLanguage(language) {
+  language = language === "ru" ? "ru" : "en";
   const dictionary = translations[language];
   document.documentElement.lang = language;
   document.querySelectorAll("[data-i18n]").forEach((element) => {
-    element.textContent = dictionary[element.dataset.i18n];
+    const value = dictionary[element.dataset.i18n];
+    if (value !== undefined) element.textContent = value;
   });
   document.querySelectorAll("[data-i18n-aria]").forEach((element) => {
     element.setAttribute("aria-label", dictionary[element.dataset.i18nAria]);
@@ -115,15 +125,17 @@ function setLanguage(language) {
     button.classList.toggle("active", selected);
     button.setAttribute("aria-pressed", String(selected));
   });
-  document.title = language === "en" ? "Aleksandr Katilov — Founder, eBay Seller & AI Developer" : "Александр Катилов — основатель брендов, eBay-продавец и AI-разработчик";
-  document.getElementById("meta-description").content = language === "en"
-    ? "Portfolio of Aleksandr Katilov — founder of PUFFLY and ZERMOK, eBay seller, and developer of Windows, Android and AI tools, led by FastStock: Inventory & Storage, alongside Dufli and Rilvo Office."
-    : "Портфолио Александра Катилова — основателя PUFFLY и ZERMOK, eBay-продавца и разработчика программ для Windows, Android- и AI-инструментов, с основным приложением FastStock: Inventory & Storage, а также Dufli и Rilvo Office.";
-  localStorage.setItem("portfolio-language", language);
+  document.title = language === "en" ? "Aleksandr Katilov — Windows Software & Android Apps" : "Александр Катилов — программы для Windows и Android";
+  document.querySelectorAll('meta[data-content-en][data-content-ru]').forEach(element => {
+    element.content = element.dataset[language === "ru" ? "contentRu" : "contentEn"];
+  });
+  try { localStorage.setItem("site-language", language); } catch { /* Language switching also works with storage disabled. */ }
 }
 
 document.getElementById("year").textContent = new Date().getFullYear();
 document.querySelectorAll("[data-lang]").forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.lang));
 });
-setLanguage(localStorage.getItem("portfolio-language") || "en");
+let savedLanguage = "en";
+try { savedLanguage = localStorage.getItem("site-language") || localStorage.getItem("portfolio-language") || localStorage.getItem("apps-language") || "en"; } catch { /* Default to English. */ }
+setLanguage(savedLanguage);

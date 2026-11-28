@@ -1,0 +1,18 @@
+.activity-page{--blue:#5350be;--lime:#e5e3ff}
+.activity-page .hero{grid-template-columns:minmax(0,1fr) minmax(260px,350px);gap:48px;padding:75px 0}
+.activity-page .hero h1{font-size:clamp(40px,5.6vw,65px);letter-spacing:-2.5px;overflow-wrap:anywhere}
+.activity-page .buttons{flex-wrap:wrap}
+.activity-page .button{font-size:14px}
+.activity-page .availability{font-size:16px;margin-top:24px}
+.journal-illustration{margin:0;padding:28px;border:1px solid #d4d1eb;background:#f0effb;border-radius:20px;min-width:0}
+.illustration-label{font-size:12px;color:#66618d;margin-bottom:24px}
+.journal-flow{display:grid;gap:14px}
+.journal-flow>div{padding:18px;border:1px solid #d4d1eb;background:var(--paper);border-radius:10px}
+.journal-flow span{display:block;font-size:14px;color:var(--blue);margin-bottom:6px}
+.journal-flow strong{display:block;font-size:18px;line-height:1.45}
+.journal-illustration figcaption{font-size:14px;color:#66618d;margin-top:20px}
+.journal-steps{padding-left:22px}
+.journal-steps li{margin:12px 0}
+.activity-page .section p,.activity-page .section li{font-size:16px}
+.activity-page .notice{background:#eeedf8}
+@media(max-width:800px){.activity-page .hero{grid-template-columns:1fr;gap:32px}.journal-illustration{max-width:480px}.activity-page .topbar{flex-wrap:wrap;gap:18px}.activity-page .nav-wrap{width:100%;align-items:flex-start}.activity-page .nav{flex-wrap:wrap;gap:12px 18px}}

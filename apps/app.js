@@ -6,10 +6,23 @@ Object.assign(copy.en,{screenshotsKicker:"Inside the app",screenshotsTitle:"See 
 Object.assign(copy.ru,{screenshotsKicker:"Внутри приложения",screenshotsTitle:"Вся тренировка перед глазами",screenHome:"Главный экран и прогресс за неделю",screenAwards:"Награды и достижения",screenPrograms:"Готовые программы тренировок"});
 Object.assign(copy.en,{apps:"Mobile Apps",catalog:"Mobile Apps",catalogText:"Independent Android apps for fitness, personal finance and reseller inventory.",back:"Back to Mobile Apps",desktopSoftware:"Desktop Software",desktopCatalogText:"Independent programs for your computer. Documents and spreadsheets with Rilvo Office for Windows.",backDesktop:"Back to Desktop Software",portfolio:"Portfolio"});
 Object.assign(copy.ru,{apps:"Мобильные приложения",catalog:"Мобильные приложения",catalogText:"Независимые приложения для Android: тренировки, личные финансы и учёт товаров.",back:"К мобильным приложениям",desktopSoftware:"Программы для ПК",desktopCatalogText:"Независимые программы для компьютера. Документы и таблицы с Rilvo Office для Windows.",backDesktop:"К программам для ПК",portfolio:"Портфолио"});
-Object.assign(copy.en,{catalogText:"Explore FastStock for personal and team inventory, plus Android tools for fitness, finance and local file transfer.",desktopCatalogText:"Independent Windows software for documents, spreadsheets, video editing and local file transfer."});
-Object.assign(copy.ru,{catalogText:"FastStock для личного и командного учёта товаров, а также Android-приложения для тренировок, финансов и передачи файлов.",desktopCatalogText:"Независимые программы для Windows: документы, таблицы, видеомонтаж и передача файлов по локальной сети."});
-function setLang(lang){lang=lang==="ru"?"ru":"en";document.documentElement.lang=lang;document.querySelectorAll('[data-t]').forEach(el=>{const value=copy[lang][el.dataset.t];if(value!==undefined)el.textContent=value});document.querySelectorAll('[data-en][data-ru]').forEach(el=>{el.textContent=el.dataset[lang]});document.querySelectorAll('meta[data-content-en][data-content-ru]').forEach(el=>{el.content=el.dataset[lang==='ru'?'contentRu':'contentEn']});document.querySelectorAll('[data-aria-en][data-aria-ru]').forEach(el=>el.setAttribute('aria-label',el.dataset[lang==='ru'?'ariaRu':'ariaEn']));document.querySelectorAll('img[data-alt-en][data-alt-ru]').forEach(el=>{el.alt=el.dataset[lang==='ru'?'altRu':'altEn']});document.querySelectorAll('[data-lang]').forEach(b=>{const on=b.dataset.lang===lang;b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on))});localStorage.setItem('apps-language',lang)}
-document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));setLang(localStorage.getItem('apps-language')||'en');
+Object.assign(copy.en,{open:"App details",catalogText:"Android apps for inventory, gym training, debt planning, completed-work journals and local file transfer. Browse features, verified downloads and project information.",trackerShort:"Log sets, reps and weight, review workout history, body-weight charts and progress photos.",desktopCatalogText:"Independent Windows software for documents, spreadsheets, video editing and local file transfer."});
+Object.assign(copy.ru,{open:"Об приложении",catalogText:"Android-приложения для учёта товаров, тренировок, планирования долгов, дневника выполненной работы и передачи файлов. Возможности, проверенные загрузки и описания проектов.",trackerShort:"Записывайте подходы, повторения и вес, просматривайте историю тренировок, графики веса тела и фото прогресса.",desktopCatalogText:"Независимые программы для Windows: документы, таблицы, видеомонтаж и передача файлов по локальной сети."});
+function setLang(lang){
+  lang=lang==="ru"?"ru":"en";
+  document.documentElement.lang=lang;
+  document.querySelectorAll('[data-t]').forEach(el=>{const value=copy[lang][el.dataset.t];if(value!==undefined)el.textContent=value});
+  document.querySelectorAll('[data-en][data-ru]').forEach(el=>{el.textContent=el.dataset[lang]});
+  document.querySelectorAll('meta[data-content-en][data-content-ru]').forEach(el=>{el.content=el.dataset[lang==='ru'?'contentRu':'contentEn']});
+  document.querySelectorAll('[data-aria-en][data-aria-ru]').forEach(el=>el.setAttribute('aria-label',el.dataset[lang==='ru'?'ariaRu':'ariaEn']));
+  document.querySelectorAll('img[data-alt-en][data-alt-ru]').forEach(el=>{el.alt=el.dataset[lang==='ru'?'altRu':'altEn']});
+  document.querySelectorAll('[data-lang]').forEach(b=>{const on=b.dataset.lang===lang;b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on))});
+  try{localStorage.setItem('site-language',lang)}catch{/* The switch remains usable when storage is blocked. */}
+}
+document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+let savedLanguage='en';
+try{savedLanguage=localStorage.getItem('site-language')||localStorage.getItem('apps-language')||localStorage.getItem('portfolio-language')||'en'}catch{/* Default to English. */}
+setLang(savedLanguage);
 
 const carousel=document.querySelector('[data-carousel]');
 if(carousel){

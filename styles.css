@@ -1,7 +1,7 @@
 :root{--ink:#151515;--muted:#666;--light:#f3f3f1;--line:#d9d9d5;--accent:#1b4dff}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:#fafaf8;color:var(--ink);font-family:Inter,Arial,sans-serif;font-size:14px;line-height:1.45}
+body{margin:0;background:#fafaf8;color:var(--ink);font-family:Inter,Arial,sans-serif;font-size:16px;line-height:1.55}
 a:focus-visible,button:focus-visible{outline:3px solid color-mix(in srgb,var(--accent) 35%,transparent);outline-offset:3px}
 .skip-link{position:fixed;left:16px;top:12px;z-index:10;transform:translateY(-160%);padding:10px 14px;background:var(--ink);color:#fff}.skip-link:focus{transform:none}
 a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px}
@@ -24,6 +24,7 @@ h2{font-size:13px;margin:2px 0 0;font-weight:700}
 .entry.featured{padding:22px;background:#fff;border:1px solid var(--line);box-shadow:0 8px 28px rgba(0,0,0,.04)}
 .entry-head{display:flex;justify-content:space-between;gap:28px;align-items:flex-start;margin-bottom:14px}
 h3{font-size:14px;margin:0 0 2px}.subtitle{margin:0;color:var(--muted)}
+nav,.language-switch{font-size:14px}.resume-section>h2{font-size:14px}.entry h3{font-size:17px}.tag{font-size:12px}.tech li,footer{font-size:13px}.entry .project-actions{display:flex;flex-wrap:wrap;gap:10px}.project-actions .action{font-size:14px}.location{font-size:13px}
 time{font-size:12px;font-style:italic;color:var(--muted);text-align:right;white-space:nowrap}
 .entry>p{max-width:730px;margin:0}
 .entry .project-actions{margin-top:16px}
@@ -36,3 +37,4 @@ footer{margin-top:72px;padding-top:18px;border-top:1px solid var(--line);display
 @media(max-width:680px){.page{width:min(100% - 28px,980px);padding-top:25px}.intro{display:block;margin-bottom:45px}.header-right{margin-top:24px;justify-content:space-between;gap:12px}.intro nav{gap:14px;flex-wrap:wrap}.resume-section{grid-template-columns:1fr;gap:16px;margin-bottom:46px}.resume-section>h2{text-transform:uppercase;letter-spacing:.7px;color:var(--muted);padding-bottom:8px;border-bottom:1px solid var(--line)}.entry-head{display:block}.entry-head time{display:block;text-align:left;margin-top:8px}.skills-grid{grid-template-columns:1fr;gap:20px}.contact-links{flex-direction:column;gap:8px}.lead{font-size:17px}.entry.featured{padding:17px}}
 @media(max-width:680px){.intro nav{justify-content:flex-start}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.page .tag{font-size:12px}.page .tech li,.page footer{font-size:13px}
